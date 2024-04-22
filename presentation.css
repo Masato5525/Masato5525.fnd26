@@ -1,1 +1,207 @@
 
+
+body {
+  padding-top:25px; /*要素内側空白25px広げる*/
+  background-image: url("https://images.unsplash.com/photo-1603969409447-ba86143a03f6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /*写真*/
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /*画像を繰り返し表示しない*/
+  background-attachment: fixed; /*画像を固定位置に設定*/
+  height: 100vh;
+  width: 100%;
+  margin-left: 10px; /*要素外の左側空白25px広げる*/
+  margin-right: 10px; /*要素外の右側空白25px広げる*/
+}
+
+#contactForm {
+  max-width: 600px; /*要素の最大値を600px指定*/
+  margin: 0 auto; /*左右のマージン(空白)を設定し、水平方向に要素を中央に配置*/
+  text-align: center; /*テキストのalign(水平方向)をセンターにする*/
+  border-radius: 6px; /*ボーダーの角を丸くする*/
+  background-color: #ebeaea;
+}
+
+#head {
+  border-radius: 6px;
+  background-color: rgb(40, 89, 149);
+  color: #cbcaca;
+}
+
+h1 {
+  text-align: center;
+  padding: 18px 0 14px 0;
+  font-size: 50px;
+}
+
+/* #timer { */
+  /* position: fixed; スクロールしてもビューポート内の固定された位置にとどまる */
+  /* background-color: #000000;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 30px;
+} 時間があるときに*/
+
+.label-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  gap: 5px;
+}
+
+label {
+  display: flex; 
+  max-width: 50%;
+  /*フレックスコンテナーとして設定、その子要素をフレックスアイテムとして設定
+  要素を水平、垂直方向に配置する際自由度が高い*/
+  color: #494949;
+  width: auto;
+  padding: 5px ;
+  margin-left: 20px;
+  background: #f4f4f4;
+  border-left: solid 5px #7db4e6;
+  border-bottom: solid 3px #d7d7d7;
+  text-align: center;
+  align-items: center; 
+  justify-content: center; /**フレックスアイテムを水平方向調整*/
+}
+
+#name {
+  margin: 25px 200px 25px 0px;
+}
+
+#num1, #num2 {
+  width: 150px;
+  margin: 25px 25px;
+  text-align: center;
+}
+
+#plus {
+  font-size: 25px;
+}
+
+textarea {
+  height: 200px;
+  width: 500px;
+  margin: 30px 30px;
+}
+
+input[type="text"] {
+  font-size: 20px;
+}
+
+input,textarea {
+  font-size: 25px;
+  padding: 15px 10px 10px 10px;
+  border: 1px solid #cecece;
+  background-color: #d7d7d7;
+  color: #000000;
+  border-radius: 6px;
+  background-clip:padding-box; 
+  /*背景画像や背景色がどこまで広がるかを指定、boxならパディングボックスの内側のみ*/
+  box-sizing: border-box;
+  /*通常は、要素の幅や高さはコンテンツの幅や高さにパディングとボーダーの幅を加えた値
+  box-sizingを使用するとボーダーと幅を含めた値として計算される
+  要素のサイズを指定する際にボーダーやパディングの幅を考慮する必要がなくなる*/
+}
+
+button {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  background-color: #2ABCA7;
+  padding: 12px 45px;
+  border-radius: 6px;
+  border: 1px solid #2ABCA7;
+  transition: 0.5s;
+  cursor: pointer;
+  width: 30%;
+  color: #fff;
+}
+
+.nameDate-container {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 30px; */
+  align-items: center;
+
+}
+
+#randomNum1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  font-size: 40px;
+}
+
+#plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+#randomNum2 {
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+  font-size: 40px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#error {
+  color: red;
+}
+
+/* #sum {
+  display: block;
+} */
+
+#thoughts {
+  margin-top: 30px;
+}
+
+#blank {
+  height: 2000px;
+}
+
+footer {
+  border-radius: 6px;
+  background-color: rgb(40, 89, 149);
+  padding-top: 1px;
+  color: #cbcaca;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+h3 {
+  padding: 10px 0 14px 0;
+  font-size: 30px;
+}
+
+#date {
+  margin: 0;
+}
+/* 
+#targetSection {
+  padding: 20px;
+  background-color: lightblue;
+  border: 1px solid navy;
+} */
+
+
+
+/* .overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
