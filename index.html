@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>プログラミング基礎</title>
+  <link rel="stylesheet" href="presentation.css">  
+  <script type="text/javascript" src="modules/test-boilerplate.js"></script>
+  <script type="text/javascript" src="modules/lodash.min.js"></script>
+</head>
+<body>
+  <form id="container">
+    <div id="contactForm">
+      <div id="head">
+        <h1>Hello FND26</h1>
+      </div>
+      <div>
+        <label for="name" class="name">始めのあいさつ</label><br/>
+        <textarea name="greeting" id="greeting" placeholder="あいさつ"></textarea><br/>
+        <!-- <label for="purpose">DIG教育を受けた目的</label><br/>
+        <textarea name="purpose" id="purpose" placeholder="目的"></textarea><br/> -->
+        <!-- <label for="resultReport">プログラミング基礎で取得したスキル</label>
+        <textarea name="resultReport" id="resultReport" placeholder="何ができるようになった？"></textarea><br/>     -->
+          <label for="question">
+            ランダムに表示された２個の数字の<br>
+            合計を求めてください
+           </label>
+          <textarea></textarea>
+          <div class="nameDate-container">
+            <div id="randomNum1"></div>
+            <span id="plus">&plus;</span>
+            <div id="randomNum2"></div>
+          </div>
+           <div class="input-container">
+             <input type="text" id="sum" placeholder="数字入力">
+           </div>
+          <button type="button" onclick="sumOfRandomNumber()">
+            ファイナル<br>
+            アンサー？
+          </button>
+          <p id="message"></p>
+        </div>
+        <label for="nameCheck">名前入力確認</label>
+        <textarea></textarea>
+        <input type="text" id="nameDate" placeholder="名前を入力してください">
+        <div id="error"></div>
+        <button type="button" onclick="nameCheck()">送信</button>
+        <div>
+          <label for="code">
+            Webページ製作で苦労したこと
+          </label>
+          <p id="imgUpp"></p>
+          <textarea name="code" id="code" placeholder="苦労したこと"></textarea>
+        </div>
+        <div>
+          <!-- <label for="thoughts">
+            プログラミング教育で苦労したこと
+          </label>
+          <textarea name="thoughts" id="thoughts" placeholder="苦労したこと"></textarea><br/> -->
+        </div>
+    </form >
+        <button id="scrollButton" type="button">最後に・・・</button>
+        <div id="blank"></div>
+        <div id="targetSection">
+            <label for="workplace">職場の皆さん</label>
+            <textarea></textarea>
+          <label for="FND26menber">FND26受講生の皆様</label>
+            <textarea></textarea>
+          <label for="instracter">講師の皆様</label>
+          <textarea></textarea>
+        </div>
+    </div>
+        <script src="presentation.js"></script>
+    </body> 
+    <footer>
+      <h3>FND26</h3>
+      <p id="date">2024/4/21   ishichi</p>
+    </footer>
+    </html>
