@@ -31,15 +31,6 @@ h1 {
   font-size: 50px;
 }
 
-/* #timer { */
-  /* position: fixed; スクロールしてもビューポート内の固定された位置にとどまる */
-  /* background-color: #000000;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px;
-  margin-left: 30px;
-} 時間があるときに*/
-
 .label-container {
   display: flex;
   justify-content: center;
@@ -188,18 +179,3 @@ h3 {
 #date {
   margin: 0;
 }
-/* 
-#targetSection {
-  padding: 20px;
-  background-color: lightblue;
-  border: 1px solid navy;
-} */
-
-
-
-/* .overlay-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
